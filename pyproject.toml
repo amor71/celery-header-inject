@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling>=1.20"]
+build-backend = "hatchling.build"
+
+[project]
+name = "celery-context-headers"
+version = "0.1.0"
+description = "Propagate per-request context to Celery tasks via message headers, with deep canvas support."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+keywords = ["celery", "headers", "contextvars", "tracing", "task", "chain", "group", "chord"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Framework :: Celery",
+  "Topic :: System :: Distributed Computing",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+dependencies = [
+  "celery>=5.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/celery-context-headers"
+Repository = "https://github.com/your-org/celery-context-headers"
+Issues = "https://github.com/your-org/celery-context-headers/issues"
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+]
